@@ -13,3 +13,28 @@ CHALLENGE
 - If the password is less than 5 characters, log out "Your password is too short!".
 */
 
+let firstLetter = "m";
+let secondLetter = "a";
+let thirdLetter = "n";
+let fourthLetter = "g";
+let fifthLetter = "o";
+let passwordCharactor = ["m", "a", "n", "g", "o"];
+let password = passwordCharactor[0] + passwordCharactor[1] + passwordCharactor[2] + passwordCharactor[3] + passwordCharactor[4];
+let forgot = true;
+let reset = true;
+
+console.log(password);
+
+   function anaswerOfPassword(password) {
+    if (password === passwordCharactor[0] + passwordCharactor[1] + passwordCharactor[2] + passwordCharactor[3] + passwordCharactor[4] && passwordCharactor.length >= 5) {
+        console.log("Access Granted!"); 
+    } else if (password === passwordCharactor[0] + passwordCharactor[1] + passwordCharactor[2] + passwordCharactor[3] + passwordCharactor[4] && passwordCharactor.length < 5) {
+        console.log("Your password is too short!");
+    } else {console.log("Access Denied!");}}
+    
+if (forgot === true && reset === false) {
+    console.log("Here is a hint");
+} else {
+    console.log("Let's reset your account");
+}
+
